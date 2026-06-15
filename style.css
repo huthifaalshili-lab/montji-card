@@ -1,201 +1,109 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   min-height: 100vh;
-  font-family: "Tajawal", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   background:
-    radial-gradient(circle at 20% 10%, rgba(255, 193, 120, 0.28), transparent 32%),
-    radial-gradient(circle at 80% 20%, rgba(255, 118, 176, 0.22), transparent 28%),
-    linear-gradient(135deg, #171122 0%, #261331 48%, #120c19 100%);
-  color: #fff;
-}
-
-.page {
-  width: 100%;
-  min-height: 100vh;
+    radial-gradient(circle at top left, #6b3b5f, transparent 35%),
+    radial-gradient(circle at bottom right, #006b70, transparent 35%),
+    linear-gradient(135deg, #1d1029, #071f24);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 20px;
+  color: #fff;
 }
 
 .card {
-  position: relative;
   width: 100%;
-  max-width: 430px;
-  overflow: hidden;
+  max-width: 390px;
   text-align: center;
-  padding: 38px 24px 28px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 34px;
-  background: rgba(255, 255, 255, 0.10);
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.38);
-  backdrop-filter: blur(18px);
-}
-
-.glow {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  border-radius: 999px;
-  filter: blur(10px);
-  opacity: 0.18;
-  pointer-events: none;
-}
-
-.glow-one {
-  top: -60px;
-  right: -40px;
-  background: #ffb86b;
-}
-
-.glow-two {
-  bottom: -70px;
-  left: -45px;
-  background: #ff4fa3;
+  padding: 35px 25px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
 }
 
 .logo {
-  position: relative;
-  width: 92px;
-  height: 92px;
-  margin: 0 auto 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 28px;
-  background: linear-gradient(145deg, #ffcf84, #ff7eb3 52%, #7b3ff2);
-  box-shadow: 0 20px 50px rgba(255, 126, 179, 0.35);
-}
-
-.logo span {
-  font-size: 48px;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1;
-}
-
-.badge {
-  display: inline-flex;
-  padding: 8px 14px;
-  margin-bottom: 16px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffe2b9;
-  font-size: 14px;
-  font-weight: 700;
+  width: 105px;
+  height: 105px;
+  object-fit: contain;
+  border-radius: 22px;
+  background: #fff;
+  padding: 8px;
+  margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 46px;
+  font-size: 34px;
   font-weight: 800;
-  letter-spacing: -1px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
-.subtitle {
-  max-width: 310px;
-  margin: 0 auto;
-  color: rgba(255, 255, 255, 0.78);
+h2 {
+  font-size: 17px;
+  color: #d6a45f;
+  margin-bottom: 18px;
+}
+
+.welcome {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 22px;
+  color: #f1f1f1;
+}
+
+.contact {
+  margin-bottom: 18px;
+}
+
+.contact p {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.contact a {
+  color: #d6a45f;
   font-size: 18px;
-  line-height: 1.7;
-}
-
-.divider {
-  width: 72px;
-  height: 4px;
-  margin: 26px auto;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #ffcf84, #ff7eb3);
-}
-
-.actions {
-  display: grid;
-  gap: 13px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  display: block;
   width: 100%;
-  min-height: 58px;
-  padding: 14px 18px;
-  border-radius: 20px;
   text-decoration: none;
-  color: #fff;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 16px;
   font-size: 17px;
   font-weight: 800;
-  transition: transform 0.22s ease, box-shadow 0.22s ease, opacity 0.22s ease;
+  transition: 0.25s;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.25);
+}
+
+.platform {
+  background: linear-gradient(135deg, #d6a45f, #b87932);
+  color: #fff;
 }
 
 .instagram {
-  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
-}
-
-.whatsapp {
-  background: linear-gradient(135deg, #0f9f58, #25d366);
-}
-
-.phone {
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.icon {
-  font-size: 22px;
-}
-
-.contact {
-  margin-top: 22px;
-  direction: ltr;
-  color: #ffe2b9;
-  font-size: 18px;
-  font-weight: 800;
+  background: linear-gradient(135deg, #006b70, #00959b);
+  color: #fff;
 }
 
 .footer {
-  margin-top: 18px;
-  color: rgba(255, 255, 255, 0.45);
-  font-size: 13px;
-}
-
-@media (max-width: 420px) {
-  .page {
-    padding: 16px;
-  }
-
-  .card {
-    padding: 32px 18px 24px;
-    border-radius: 28px;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-
-  .btn {
-    font-size: 16px;
-  }
-  .logo {
-  width: 170px;
-  height: auto;
-  display: block;
-  margin: 0 auto 20px;
-  border-radius: 20px;
-  }
+  margin-top: 20px;
+  font-size: 14px;
+  color: #eee;
 }
